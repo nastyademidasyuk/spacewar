@@ -56,9 +56,10 @@ export class Mission extends BaseEntity {
     logStatus(prefix = "") {
         console.log(
             `${prefix}Mission "${this.name}": ship = ${this.ship.name},
-        pilot - ${this.currentPilot ? this.currentPilot.displayName : "no pilot found"},
+        pilot - ${this.currentPilot ? this.currentPilot.displayName : "пилота не нашлось"},
         cargos: ${this.cargos.length}, and received in total: ${this.reward}`
         );
     }
 }
+
 

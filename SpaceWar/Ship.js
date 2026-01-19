@@ -15,6 +15,7 @@ export class Ship extends BaseEntity {
 
     info() {
         console.log(`${this.displayName}. Speed: ${this.speed}, capacity: ${this.capacity}.
-        Pilot: ${this.currentPilot ? this.currentPilot.displayName : "no pilot found"}.`);
+        Pilot: ${this.currentPilot ? this.currentPilot.displayName : "пилот не найден"}.`);
     }
+
 }

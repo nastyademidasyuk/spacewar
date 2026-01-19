@@ -17,7 +17,7 @@ export class Mission extends BaseEntity {
 
 
         if (newTotalWeight > this.maxWeight) {
-            MissionControl.genericLog.call(this, "[ERROR] Mission сликшом тяжелая!");
+            MissionControl.genericLog.call(this, "[ERROR] миссия сликшом тяжелая!");
             return;
         }
 
@@ -61,3 +61,4 @@ export class Mission extends BaseEntity {
         );
     }
 }
+
